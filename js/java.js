@@ -28,18 +28,22 @@ gantiLink();
 window.addEventListener("hashchange", gantiLink);
 
 // hidupkan menu
+const hitam = document.getElementById("hitam");
+const bodyHtml = document.body;
 const navAktif = document.querySelector(".navbar-nav");
-const nav = document.querySelector(".navbar");
 const navMenu = document.querySelector("#nav-menu");
 navMenu.onclick = () => {
   navAktif.classList.toggle("aktif");
-  nav.classList.toggle("aktif-hp");
+  bodyHtml.classList.toggle("aktif");
+  hitam.classList.toggle("aktif");
 };
 
 //tutup menu
 document.addEventListener("click", function(a){
   if(!navAktif.contains(a.target) && !navMenu.contains(a.target)){
     navAktif.classList.remove("aktif");
+    bodyHtml.classList.remove("aktif");
+    hitam.classList.remove("aktif");
   };
 });
 
@@ -52,3 +56,7 @@ document.addEventListener("scroll", function () {
     navbar.classList.remove("discroll");
   }
 });
+
+//dapatkan total foto
+const totalFoto = document.querySelectorAll(".album-tumbnail img").length;
+document.getElementById("total-foto").innerHTML = totalFoto;
