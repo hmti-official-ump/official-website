@@ -379,12 +379,11 @@ body {
 /* home bagian 4 */
 /* foto bersama 2025 */
 .halaman-home4 {
-  padding-top: 1rem;
   display: flex;
   flex-direction: column;
 }
 .halaman-home4 .judul-bagian {
-  padding-block: 1.5rem;
+  padding-bottom: 2rem;
 }
 .halaman-home4 .container-bingkai {
   aspect-ratio: 16/9;
@@ -513,7 +512,8 @@ body {
     overflow: hidden;
   }
 
-  .navbar .navbar-nav {
+  /* Navbar */
+  .navbar-nav {
     border-left: 2px solid rgba(0, 0, 0, 0.219);
     position: absolute;
     top: 0vh;
@@ -523,7 +523,7 @@ body {
     width: 20rem;
     transition: 0.5s ease-out;
   }
-  .navbar .navbar-nav a {
+  .navbar-nav a {
     display: block;
     font-size: 1.5rem;
     margin: 2rem;
@@ -532,16 +532,18 @@ body {
   .hitam.aktif {
     display: block;
   }
-  .navbar .navbar-nav.aktif {
+  .navbar-nav.aktif {
     right: 0;
   }
-  .navbar .navbar-nav a::after {
+  .navbar-nav a::after {
     transform-origin: 0 0;
   }
-  .navbar .navbar-nav a:hover::after,
-  .navbar .navbar-nav a.aktif::after {
+  .navbar-nav a:hover::after,
+  .navbar-nav a.aktif::after {
     transform: scaleX(0);
   }
+
+  /* Hamburger menu */
   #nav-menu {
     width: 2rem;
     display: inline-block;
