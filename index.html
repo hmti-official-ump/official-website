@@ -20,11 +20,11 @@
   <body>
     <!--Navigasi-->
     <nav class="navbar">
-      <!-- hitam -->
+      <!-- Tutup hitam -->
       <div class="hitam" id="hitam"></div>
       <div class="nav-logo">
-        <img src="assets/hmti-logo.png" alt="gagal dimuat!" class="nav-icon" />
-        <a href="#beranda" class="nav-judul">HMTI</a>
+        <img src="assets/hmti-logo.png" alt="gagal dimuat!" />
+        <a href="#beranda">HMTI</a>
       </div>
       <div class="navbar-nav">
         <a href="#beranda">Beranda</a>
@@ -39,7 +39,7 @@
     <main class="sesi">
       <!--Home-->
       <section class="konten" id="beranda">
-        <div class="home-bg1">
+        <div class="halaman-default halaman-home1">
           <div class="home-tulisan">
             <h1>Bersama Kita <span>Harus</span> Bisa!</h1>
             <p>
@@ -47,16 +47,23 @@
               Palembang, Sebagai Wadah kreativitas dan inovasi mahasiswa
               Teknologi Informasi dalam menghadapi perkembangan zaman"
             </p>
-            <button onclick="location.href='#album'" class="home-tombol">
+            <button
+              onclick="location.href='#album'"
+              class="khusus-tombol home-tombol-1"
+            >
               Kenalan
             </button>
-            <button onclick="location.href='#album'" class="home-tombol-2">
+            <button
+              onclick="location.href='#album'"
+              class="khusus-tombol home-tombol-2"
+            >
               Berita
             </button>
           </div>
-          <div class="sigma">
-            <div class="home-bingkai">
+          <div class="container-gambar">
+            <div class="container-bingkai-kotak">
               <img
+                class="home-img1"
                 src="assets/Elaina12.png"
                 title="foto jembatan ampera"
                 alt="gagal dimuat!"
@@ -64,13 +71,82 @@
             </div>
           </div>
         </div>
+
+        <!-- Home bagian 2 -->
+        <div class="halaman-default halaman-home2">
+          <h1 class="judul-bagian">Tentang HMTI</h1>
+          <p class="judul-bagian-p">
+            HMTI atau singkatan dari Himpunan Mahasiswa Teknologi Informasi
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+            nesciunt illum sint magni ut ratione cum molestiae, dicta saepe
+            laboriosam odit, alias ipsa, mollitia iste velit magnam quas vitae
+            eos.
+          </p>
+        </div>
+
+        <!-- Home bagian 3 -->
+        <div class="halaman-default halaman-home3">
+          <!-- status hmti -->
+          <div class="highlight">
+            <div class="content">
+              <div class="home-foto-mini">
+                <div class="container-bingkai-bulat">
+                  <img src="assets/flag.png" />
+                </div>
+                <p>Sejak 2018</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="home-foto-mini">
+                <div class="container-bingkai-bulat">
+                  <img src="assets/community.png" />
+                </div>
+                <p>Anggota Aktif 40+</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="home-foto-mini">
+                <div class="container-bingkai-bulat">
+                  <img src="https://img.icons8.com/ios-filled/50/roblox.png" />
+                </div>
+                <p>Pemain Roblox 20+</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="home-foto-mini">
+                <div class="container-bingkai-bulat">
+                  <img src="assets/badge.png" />
+                </div>
+                <p>7 Divisi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  home bagian 4 -->
+        <div class="halaman-default halaman-home4">
+          <h1 class="judul-bagian">Foto Bersama 2025</h1>
+          <div class="container-gambar">
+            <div class="container-bingkai">
+              <iframe
+                src="https://player.cloudinary.com/embed/?cloud_name=dlhd20zvw&public_id=elainaAMV_p5gpdp&autoplay=true&muted=true&loop=true&control_bar[volumePanel]=false&control_bar[fullscreenToggle]=false"
+                width="640"
+                height="360"
+                style="height: auto; width: 100%; aspect-ratio: 640 / 360"
+                allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                allowfullscreen
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </section>
+
       <!--Album-->
       <section class="konten" id="album">
         <div class="album">
           <div class="album-tulisan">
-            <h1>Album <span>HMTI</span></h1>
-            <p>
+            <h1 class="judul-bagian">Album <span>HMTI</span></h1>
+            <p class="judul-bagian-p">
               Kebersamaan kami yang diabadikan dalam bentuk digital dan
               menyimpan kejadian yang tak terlupakan
             </p>
