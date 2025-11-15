@@ -22,10 +22,12 @@
     <nav class="navbar">
       <!-- Tutup hitam -->
       <div class="hitam" id="hitam"></div>
+      <!-- Logo kiri -->
       <div class="nav-logo">
         <img src="assets/hmti-logo.png" alt="gagal dimuat!" />
         <a href="#beranda">HMTI</a>
       </div>
+      <!-- navigasi kanan -->
       <div class="navbar-nav">
         <a href="#beranda">Beranda</a>
         <a href="#berita">Berita</a>
@@ -33,13 +35,30 @@
         <a href="#album">Album</a>
         <a href="#tentang">Tentang Kami</a>
       </div>
+      <!-- Hamburger menu -->
       <img id="nav-menu" src="assets/menu-hitam.svg" alt="gagal dimuat!" />
     </nav>
+
     <!--Main-->
     <main class="sesi">
       <!--Home-->
       <section class="konten" id="beranda">
+        <!-- Home bagian 1 -->
         <div class="halaman-default halaman-home1">
+          <!-- element percantikan
+          <div class="bungkus-aneh1">
+            <div class="objek-aneh">
+              <div class="rotasi"><div class="inti"></div></div>
+            </div>
+          </div>
+
+          <div class="bungkus-aneh2">
+            <div class="objek-aneh">
+              <div class="rotasi"><div class="inti"></div></div>
+            </div>
+          </div> -->
+
+          <!-- tulisan -->
           <div class="home-tulisan">
             <h1>Bersama Kita <span>Harus</span> Bisa!</h1>
             <p>
@@ -47,18 +66,20 @@
               Palembang, Sebagai Wadah kreativitas dan inovasi mahasiswa
               Teknologi Informasi dalam menghadapi perkembangan zaman"
             </p>
-            <button
-              onclick="location.href='#album'"
-              class="khusus-tombol home-tombol-1"
-            >
-              Kenalan
-            </button>
-            <button
-              onclick="location.href='#album'"
-              class="khusus-tombol home-tombol-2"
-            >
-              Berita
-            </button>
+            <div class="tombol">
+              <button
+                onclick="location.href='#album'"
+                class="khusus-tombol home-tombol-1"
+              >
+                Kenalan
+              </button>
+              <button
+                onclick="location.href='#album'"
+                class="khusus-tombol home-tombol-2"
+              >
+                Berita
+              </button>
+            </div>
           </div>
           <div class="container-gambar">
             <div class="container-bingkai-kotak">
@@ -74,7 +95,7 @@
 
         <!-- Home bagian 2 -->
         <div class="halaman-default halaman-home2">
-          <h1 class="judul-bagian">Tentang HMTI</h1>
+          <h1 class="judul-bagian">Tentang <span>HMTI</span></h1>
           <p class="judul-bagian-p">
             HMTI atau singkatan dari Himpunan Mahasiswa Teknologi Informasi
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
@@ -82,42 +103,47 @@
             laboriosam odit, alias ipsa, mollitia iste velit magnam quas vitae
             eos.
           </p>
-        </div>
 
-        <!-- Home bagian 3 -->
-        <div class="halaman-default halaman-home3">
           <!-- status hmti -->
           <div class="highlight">
             <div class="content">
               <div class="home-foto-mini">
-                <div class="container-bingkai-bulat">
-                  <img src="assets/flag.png" />
-                </div>
-                <p>Sejak 2018</p>
+                <img src="assets/flag.png" />
+                <p class="judul">Sejak 2018</p>
+                <p class="deskripsi">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem iste veritatis commodi iure necessitatibus
+                </p>
               </div>
             </div>
             <div class="content">
               <div class="home-foto-mini">
-                <div class="container-bingkai-bulat">
-                  <img src="assets/community.png" />
-                </div>
+                <img src="assets/community.png" />
                 <p>Anggota Aktif 40+</p>
+                <p class="deskripsi">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem iste veritatis commodi iure necessitatibus
+                </p>
               </div>
             </div>
             <div class="content">
               <div class="home-foto-mini">
-                <div class="container-bingkai-bulat">
-                  <img src="https://img.icons8.com/ios-filled/50/roblox.png" />
-                </div>
+                <img src="assets/roblox.png" />
                 <p>Pemain Roblox 20+</p>
+                <p class="deskripsi">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem iste veritatis commodi iure necessitatibus
+                </p>
               </div>
             </div>
             <div class="content">
               <div class="home-foto-mini">
-                <div class="container-bingkai-bulat">
-                  <img src="assets/badge.png" />
-                </div>
-                <p>7 Divisi</p>
+                <img src="assets/badge.png" />
+                <p>Terdapat 7 Divisi</p>
+                <p class="deskripsi">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem iste veritatis commodi iure necessitatibus
+                </p>
               </div>
             </div>
           </div>
@@ -212,15 +238,36 @@
           </div>
         </div>
       </section>
+      <!-- tentang -->
       <section class="konten" id="tentang">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
-          veritatis hic nulla dignissimos ab, rerum similique eos id eveniet
-          aperiam atque perferendis possimus praesentium incidunt laboriosam
-          ullam reiciendis ipsa libero.
-        </p>
+        <div class="halaman-default halaman-tentang1">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
+            veritatis hic nulla dignissimos ab, rerum similique eos id eveniet
+            aperiam atque perferendis possimus praesentium incidunt laboriosam
+            ullam reiciendis ipsa libero.
+          </p>
+          <div class="container-bingkai">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4074473.618701199!2d134.5204527474344!3d-4.224522597802463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x683c44e2b3173853%3A0x7c8732ad4493c76!2sPapua%20Pegunungan!5e0!3m2!1sid!2sid!4v1763116652578!5m2!1sid!2sid"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer>
+      <p>
+        &copy; 2025 HMTI Universitas Muhammadiyah Palembang - Divisi IT dan
+        pengembangan
+      </p>
+    </footer>
   </body>
   <script src="js/java.js"></script>
 </html>
