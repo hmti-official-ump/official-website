@@ -23,20 +23,22 @@
       <!-- Tutup hitam -->
       <div class="hitam" id="hitam"></div>
       <!-- Logo kiri -->
-      <div class="nav-logo">
-        <img src="assets/hmti-logo.png" alt="gagal dimuat!" />
-        <a href="#beranda">HMTI</a>
+      <div class="navbar-isi">
+        <div class="nav-logo">
+          <img src="assets/hmti-logo.png" alt="gagal dimuat!" />
+          <a href="#beranda">HMTI</a>
+        </div>
+        <!-- navigasi kanan -->
+        <div class="navbar-nav">
+          <a href="#beranda">Beranda</a>
+          <a href="#berita">Berita</a>
+          <a href="#struktur">Struktur</a>
+          <a href="#album">Album</a>
+          <a href="#tentang">Tentang Kami</a>
+        </div>
+        <!-- Hamburger menu -->
+        <img id="nav-menu" src="assets/menu-hitam.svg" alt="gagal dimuat!" />
       </div>
-      <!-- navigasi kanan -->
-      <div class="navbar-nav">
-        <a href="#beranda">Beranda</a>
-        <a href="#berita">Berita</a>
-        <a href="#struktur">Struktur</a>
-        <a href="#album">Album</a>
-        <a href="#tentang">Tentang Kami</a>
-      </div>
-      <!-- Hamburger menu -->
-      <img id="nav-menu" src="assets/menu-hitam.svg" alt="gagal dimuat!" />
     </nav>
 
     <!--Main-->
@@ -148,6 +150,103 @@
             </div>
           </div>
         </div>
+
+        <!-- home bagian 3 -->
+        <div class="halaman-default halaman-home3">
+          <h2 class="judul">Berita terkini</h2>
+
+          <!-- daftar berita -->
+          <div class="container-border">
+            <div class="container-content">
+              <!-- berita 1 -->
+              <div class="container-gambar">
+                <div class="kotak-berita">
+                  <div class="jenis">
+                    <p>Acara</p>
+                  </div>
+                  <div class="sampul-berita">
+                    <video
+                      muted
+                      autoplay
+                      loop
+                      src="https://res.cloudinary.com/dlhd20zvw/video/upload/v1763283871/4K_Live_Wallpaper_The_Journey_of_Elaina_-_Ralfiz_4K_360p_h264_sd3wad.mp4"
+                    ></video>
+                  </div>
+                  <h4>Elaina punya Fauzan</h4>
+                  <p>Pembangunan jembatan ampera sudah sampai 25%</p>
+                  <p class="tanggal">20 Desember 1965</p>
+                </div>
+              </div>
+
+              <!-- berita 2 -->
+              <div class="container-gambar">
+                <div class="kotak-berita">
+                  <div class="jenis">
+                    <p>Berita</p>
+                  </div>
+                  <div class="sampul-berita">
+                    <video
+                      class="video1"
+                      muted
+                      autoplay
+                      loop
+                      src="https://res.cloudinary.com/dlhd20zvw/video/upload/v1763237424/snapsave-app_725414082695669_hd_ssaner.mp4"
+                    ></video>
+                  </div>
+                  <h4>Sejarah Tak Berbohong</h4>
+                  <p>
+                    Ketika seorang pemimpin mengingkari janjinya di depan publik
+                    dan media global
+                  </p>
+                  <p class="tanggal">20 Desember 1965</p>
+                </div>
+              </div>
+              <!-- berita 3 -->
+              <div class="container-gambar">
+                <div class="kotak-berita">
+                  <div class="jenis">
+                    <p>Acara</p>
+                  </div>
+                  <div class="sampul-berita">
+                    <img src="assets/palembang-foto.png" />
+                  </div>
+                  <h4>Pembangunan Ampera</h4>
+                  <p>Pembangunan jembatan ampera sudah sampai 25%</p>
+                  <p class="tanggal">20 Desember 1965</p>
+                </div>
+              </div>
+              <!-- berita 3 -->
+              <div class="container-gambar">
+                <div class="kotak-berita">
+                  <div class="jenis">
+                    <p>Acara</p>
+                  </div>
+                  <div class="sampul-berita">
+                    <img src="assets/palembang-foto.png" />
+                  </div>
+                  <h4>Pembangunan Ampera</h4>
+                  <p>Pembangunan jembatan ampera sudah sampai 25%</p>
+                  <p class="tanggal">20 Desember 1965</p>
+                </div>
+              </div>
+              <!-- berita 3 -->
+              <div class="container-gambar">
+                <div class="kotak-berita">
+                  <div class="jenis">
+                    <p>Acara</p>
+                  </div>
+                  <div class="sampul-berita">
+                    <img src="assets/palembang-foto.png" />
+                  </div>
+                  <h4>Pembangunan Ampera</h4>
+                  <p>Pembangunan jembatan ampera sudah sampai 25%</p>
+                  <p class="tanggal">20 Desember 1965</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!--  home bagian 4 -->
         <div class="halaman-default halaman-home4">
           <h1 class="judul-bagian">Foto Bersama 2025</h1>
@@ -155,10 +254,7 @@
             <div class="container-bingkai">
               <iframe
                 src="https://player.cloudinary.com/embed/?cloud_name=dlhd20zvw&public_id=elainaAMV_p5gpdp&autoplay=true&muted=true&loop=true&control_bar[volumePanel]=false&control_bar[fullscreenToggle]=false"
-                width="640"
-                height="360"
-                style="height: auto; width: 100%; aspect-ratio: 640 / 360"
-                allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                allow="autoplay; encrypted-media; picture-in-picture"
                 allowfullscreen
                 frameborder="0"
               ></iframe>
@@ -263,10 +359,78 @@
     </main>
 
     <footer>
-      <p>
-        &copy; 2025 HMTI Universitas Muhammadiyah Palembang - Divisi IT dan
-        pengembangan
-      </p>
+      <!-- home bagian 5 -->
+      <div class="footer-atas">
+        <div class="kontak">
+          <h4>Kontak kami</h4>
+          <div class="objek-1">
+            <img src="assets/whatsapp.png" />
+            <p>+62 8515 9920 0061</p>
+          </div>
+          <div class="objek-1">
+            <img src="https://img.icons8.com/material-outlined/24/mail.png" />
+            <p>hmti.official20@gmail.com</p>
+          </div>
+          <div class="objek-1">
+            <img src="https://img.icons8.com/material-outlined/24/marker.png" />
+            <p>JL. Sumatera selatan Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+        </div>
+        <div class="navigasi">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#berita">Berita</a></li>
+            <li><a href="#struktur">Struktur</a></li>
+            <li><a href="#album">Album</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+          </ul>
+        </div>
+        <div class="media2">
+          <a href="https://www.instagram.com/prabowo/">
+            <img
+              src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000"
+            />
+          </a>
+          <a href="https://www.instagram.com/prabowo/">
+            <img
+              src="https://img.icons8.com/?size=100&id=ZRiAFreol5mE&format=png&color=000000"
+          /></a>
+          <a href="https://www.instagram.com/prabowo/">
+            <img
+              src="https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000"
+            />
+          </a>  
+        </div>
+        <div class="media">
+          <h4>Sosial Media</h4>
+          <div class="objek-1">
+            <img
+              src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000"
+            />
+            <p>elaina_gold</p>
+          </div>
+          <div class="objek-1">
+            <a href="https://www.instagram.com/prabowo/">
+              <img
+                src="https://img.icons8.com/?size=100&id=ZRiAFreol5mE&format=png&color=000000"
+            /></a>
+            <p>hmti_ump</p>
+          </div>
+          <div class="objek-1">
+            <img
+              src="https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000"
+            />
+            <p>hmti-official-ump</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bawah">
+        <p>
+          &copy; 2025 HMTI Universitas Muhammadiyah Palembang - Divisi IT dan
+          pengembangan
+        </p>
+      </div>
     </footer>
   </body>
   <script src="js/java.js"></script>
