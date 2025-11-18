@@ -1,3 +1,4 @@
+
 /* basic  */
 :root {
   --warna_basic: #014b7c;
@@ -50,16 +51,21 @@ body {
   background: var(--warna_basic);
   margin-left: -24px;
 }
-.judul-bagian {
+.judul-bagian{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.judul-bagian-h {
   font-size: 2rem;
   text-align: center;
   font-weight: 700;
   animation: masuk-judul-bagian 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
-.judul-bagian span {
+.judul-bagian-h span {
   color: var(--warna_basic);
 }
-.judul-bagian::before {
+.judul-bagian-h::before {
   content: "";
   display: block;
   transform: scaleX(0);
