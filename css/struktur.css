@@ -5,44 +5,8 @@
   gap: 3rem;
 }
 
-.halaman-struktur1 .judul-default {
-  justify-content: baseline;
-}
-
-.objek-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8em;
-  border: 1px solid var(--warna_basic);
-  padding: 0.5rem;
-  border-radius: 1em;
-  max-width: 100%;
-  min-width: 20%;
-  height: 3.5rem;
-}
-.objek-2 img {
-  width: 2.2em;
-  aspect-ratio: 1/1;
-  border: 1px solid black;
-  border-radius: 50%;
-}
-.objek-2 h5 {
-  font-size: 0.9em;
-  line-height: 1em;
-}
-.objek-2 p {
-  font-size: 0.8em;
-  line-height: 1.2em;
-}
-
-/* =====Strukrur Bagian1 End===== */
-/* =====Strukrur Bagian 2===== */
-.halaman-struktur2 {
-  display: flex;
-  flex-direction: column;
-}
-.container-content2 {
+/* daftar kepengurusan logo */
+.container-kepengurusan {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -53,7 +17,7 @@
   gap: 1rem;
   margin-bottom: 2rem;
 }
-.container-content2 .pengurus {
+.pengurus-logo {
   text-align: center;
   border-radius: 1em;
   padding: 1rem;
@@ -61,18 +25,20 @@
   border: 1px solid rgba(0, 0, 0, 0.267);
   transition: 0.3s ease-out;
 }
-.container-content2 .pengurus:hover {
+.pengurus-logo:hover {
   transform: translateY(-2px);
+  background-color: whitesmoke;
 }
-.container-content2 .pengurus img {
+.pengurus-logo img {
   width: 60%;
   aspect-ratio: 1 / 1;
 }
-.container-content2 .pengurus p {
+.pengurus-logo p {
   font-size: 0.8em;
   color: var(--warna_basic);
 }
 
+/* daftar pengurus */
 .pengurus-tampilan {
   width: 100%;
   background: white;
@@ -84,51 +50,46 @@
   flex-direction: column;
   align-items: center;
 }
-.pengurus-tampilan .judul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+/* kartu nama */
+.daftar-pengurus-kartu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
 }
-.pengurus-tampilan .container-kartu {
+.container-kartu {
   width: 20vw;
   border: 1px solid rgba(0, 0, 0, 0.267);
   border-radius: 1em;
   overflow: hidden;
 }
-.pengurus-tampilan .sampul-kartu {
+/* bingkai */
+.sampul-kartu {
   aspect-ratio: 3/4;
   position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, 0.267);
   overflow: hidden;
 }
-.kotak-media {
+.kotak-medsos {
   top: 0;
-  padding: 0.7rem;
+  padding: 5%;
   position: absolute;
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
   right: 0;
 }
-.sampul-kartu .media {
+.medsos {
   width: 2rem;
   aspect-ratio: 1 / 1;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: rgb(126, 126, 126, 0.2);
 }
-
-.kartu2 {
-  display: flex;
-  gap: 2rem;
-}
-.sampul-kartu img {
+.foto-orang {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.eska {
-  object-position: 10% 0%;
 }
 .container-kartu .deskripsi {
   text-align: center;
@@ -137,28 +98,23 @@
 
 /* Handphone */
 @media (max-width: 600px) {
-  .objek-2 h5 {
-    font-size: 0.7em;
-    line-height: 1.2em;
-  }
-  .objek-2 p {
-    font-size: 0.65em;
-    line-height: 1em;
-  }
-
-  /*  */
-  .container-content2 {
+  /* daftar kepengurusan logo */
+  .container-kepengurusan {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .container-content2 .pengurus p {
+  /* judul logo */
+  .pengurus p {
     font-size: 0.7em;
   }
-  .pengurus-tampilan .container-kartu {
-    width: 50vw;
-    border: 1px solid rgba(0, 0, 0, 0.267);
-  }
-  .kartu2 {
-    display: grid;
+  /* daftar pengurus */
+  .daftar-pengurus-kartu {
+    grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  .container-kartu {
+    width: 60vw;
+  }
+  .medsos{
+    width: 3rem;
   }
 }
