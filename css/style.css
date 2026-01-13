@@ -1,8 +1,10 @@
 /* basic  */
 :root {
-  --warna_basic: #014b7c;
-  --warna_bg: #fafafa;
-  --warna_aksen: #3098dd;
+  --warna_primary: #014b7c;
+  --warna_skunder: #3098dd;
+  --warna_tersier: #ededed;
+  --warna_bg: #f8f9fa;
+  --warna_teks: #222831;
   --waktuanim_dasar: 1.2s;
 }
 * {
@@ -32,20 +34,44 @@ body {
 
 /* ==========Class Khusus Start========== */
 /* Untuk judul dan paragraft */
+.judul-default {
+  font-size: 1.5rem;
+  position: relative;
+  margin-left: 24px;
+  margin-bottom: 2rem;
+}
+.judul-default::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  display: block;
+  height: 1em;
+  border-radius: 4px;
+  background: var(--warna_primary);
+  margin-left: -24px;
+}
 .judul-bagian {
-  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.judul-bagian-h {
+  font-size: 2.5rem;
+  text-align: center;
   font-weight: 700;
   animation: masuk-judul-bagian 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
-.judul-bagian span {
-  color: var(--warna_basic);
+.judul-bagian-h span {
+  color: var(--warna_primary);
 }
-.judul-bagian::before {
+.judul-bagian-h::before {
   content: "";
   display: block;
   transform: scaleX(0);
   padding-top: 1rem;
-  border-top: 4px solid var(--warna_basic);
+  border-top: 4px solid var(--warna_primary);
   animation: masuk-judul-bagian-garis 0.5s forwards ease-out;
   animation-delay: 0.8s;
 }
@@ -63,7 +89,7 @@ body {
   display: block;
   transform: scaleX(0);
   padding-bottom: 1.2rem;
-  border-bottom: 4px solid var(--warna_basic);
+  border-bottom: 4px solid var(--warna_primary);
   animation: masuk-judul-bagian-p-garis 0.5s forwards ease-out;
   animation-delay: 0.8s;
 }
@@ -71,7 +97,7 @@ body {
 /* Animasi */
 @keyframes masuk-judul-bagian-garis {
   to {
-    transform: scaleX(0.25);
+    transform: scaleX(0.2);
   }
 }
 @keyframes masuk-judul-bagian-p-garis {
@@ -100,7 +126,7 @@ body {
 /* Untuk Halamannya */
 .halaman-default {
   display: flex;
-  background-color: #fafafa;
+  background-color: var(--warna_bg);
   padding-block: 7rem;
   position: relative;
   min-height: 100vh;
@@ -200,8 +226,7 @@ body {
   background: rgba(48, 152, 221, 0.6);
   animation: objek-aneh-rotasi 30s linear infinite;
 } */
-
-/* amimasi */
+/* 
 @keyframes masuk-objek-aneh {
   to {
     opacity: 1;
@@ -226,6 +251,19 @@ body {
   100% {
     transform: translateY(0vh);
   }
+}
+*/
+
+/* Objek */
+
+.objek-1 {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.objek-1 img {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 /* ==========Class Khusus End========== */
@@ -254,8 +292,8 @@ body {
   width: 90vw;
 }
 .navbar.discroll {
-  background-color: rgba(240, 248, 255, 0.85);
-  border-bottom: 1px solid rgba(216, 196, 182, 0.5);
+  background-color: rgba(237, 237, 237, 0.8);
+  border-bottom: 1px solid rgb(48, 152, 221, 0.2); 
   backdrop-filter: blur(8px); /* effek blur belakang */
 }
 
@@ -273,7 +311,7 @@ body {
 .nav-logo a {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--warna_basic);
+  color: var(--warna_primary);
 }
 
 /* navigasi navbar */
@@ -282,14 +320,14 @@ body {
 }
 .navbar-nav a {
   display: inline-block;
-  color: #222222;
+  color: var(--warna_teks);
   font-size: 1.1rem;
   margin: 0 1rem;
 }
 /* Navigasi aktif */
 .navbar-nav a:hover,
 .navbar-nav a.aktif {
-  color: var(--warna_basic);
+  color: var(--warna_primary);
 }
 /* garis bawah navigasi */
 .navbar-nav a::after,
@@ -297,7 +335,7 @@ body {
   content: "";
   display: block;
   padding-bottom: 0.1rem;
-  border-bottom: 0.1rem solid var(--warna_basic);
+  border-bottom: 0.1rem solid var(--warna_primary);
   transform: scaleX(0);
   transition: 0.2s linear;
 }
@@ -349,7 +387,7 @@ body {
   opacity: 0;
 }
 .home-tulisan h1 {
-  color: #005691;
+  color: var(--warna_primary);
   font-size: 3rem;
   line-height: 2.6rem;
   position: relative;
@@ -369,17 +407,20 @@ body {
 }
 .home-img1 {
   width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  object-position: 0% 35%;
 }
 
 /* tombol */
 .home-tombol-1 {
   color: #fafafa;
-  background: var(--warna_aksen);
+  background: var(--warna_skunder);
 }
 .home-tombol-2 {
   color: black;
   background: var(--warna_bg);
-  border: 1px solid var(--warna_aksen);
+  border: 1px solid var(--warna_skunder);
   margin-left: 0.8rem;
 }
 /* animasi */
@@ -429,7 +470,7 @@ body {
   align-items: center;
   border-radius: 1rem;
   background-color: white;
-  border: 0.9px solid var(--warna_basic);
+  border: 0.9px solid var(--warna_primary);
   padding: 1rem;
   gap: 0.8rem;
   height: 100%;
@@ -458,24 +499,6 @@ body {
 .halaman-home3 {
   flex-direction: column;
 }
-.halaman-home3 .judul {
-  font-size: 1.5rem;
-  position: relative;
-  margin-left: 24px;
-  margin-bottom: 2rem;
-}
-.halaman-home3 .judul::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
-  display: block;
-  height: 1em;
-  border-radius: 4px;
-  background: var(--warna_basic);
-  margin-left: -24px;
-}
 .container-border {
   padding: 5px;
   background-color: var(--warna_bg);
@@ -487,7 +510,7 @@ body {
   gap: 2rem;
   padding: 1rem;
   overflow-x: auto;
-  scrollbar-color: var(--warna_basic) var(--warna_bg);
+  scrollbar-color: var(--warna_primary) var(--warna_bg);
   scrollbar-width: thin;
 }
 
@@ -513,7 +536,7 @@ body {
   border-radius: 20px;
   width: 4rem;
   height: 1.5rem;
-  background-color: var(--warna_basic);
+  background-color: var(--warna_primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -580,7 +603,7 @@ body {
   aspect-ratio: 16/9;
   width: 86vw;
 }
-.halaman-home4 iframe {
+.halaman-home4 img {
   width: 100%;
   height: 100%;
 }
@@ -684,19 +707,8 @@ body {
 }
 /* =====Tentang end===== */
 
-
 /* ==========Code Footer perlu di perbersih========= */
 /* =====footer===== */
-.objek-1 {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-.objek-1 img {
-  width: 30px;
-  height: 30px;
-}
-
 footer {
   color: #fafafa;
   margin-top: 3rem;
@@ -705,8 +717,8 @@ footer {
   width: 100%;
 }
 .footer-atas {
-  border-top: 1px solid var(--warna_basic);
-  background-color: var(--warna_aksen);
+  border-top: 1px solid var(--warna_primary);
+  background-color: var(--warna_skunder);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
@@ -722,7 +734,9 @@ footer {
   flex-direction: column;
   align-items: baseline;
 }
-
+.footer-atas a{
+  color: white;
+}
 .footer-atas .kontak h4,
 .footer-atas .navigasi h4,
 .footer-atas .media h4 {
@@ -731,7 +745,6 @@ footer {
   padding-bottom: 1.5rem;
   display: block;
 }
-
 .footer-atas .navigasi a {
   color: white;
   transition: 0.2s ease-out;
@@ -747,7 +760,7 @@ footer {
 }
 .footer-bawah {
   border-top: 1px solid rgba(255, 255, 255, 0.616);
-  background-color: var(--warna_basic);
+  background-color: var(--warna_primary);
   text-align: center;
 }
 .footer-bawah p {
@@ -802,7 +815,7 @@ footer {
   }
 
   /* ==========Class Khusus========== */
-  .halaman-default{
+  .halaman-default {
     min-height: unset;
   }
 
