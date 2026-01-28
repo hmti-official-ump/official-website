@@ -2,12 +2,11 @@
 }
 
 * {
+  box-sizing: border-box;
   font-family: "poppins";
 }
 
-body {
-
-}
+/* ukuran icon */
 .csi-1 {
   height: 2rem;
   width: 2rem;
@@ -21,21 +20,25 @@ body {
   width: 3rem;
 }
 
-.judul::after{
+/* lainnya */
+.judul::after {
   margin-top: 0.3rem;
-  content: '';
+  content: "";
   display: block;
   border-bottom: 10px solid #000;
   transform: scale(0.1);
 }
 
-.fs-7 {
-  font-size: 0.9rem;
+/* acara */
+.card-acara-atas {
+  height: 10rem;
 }
-.fs-8 {
-  font-size: 0.8rem;
+.card-acara {
+  min-width: 23rem;
+  max-width: 23rem;
 }
 
+/* divisi */
 .info-divisi {
   color: black;
   transition: 0.2s ease-out;
@@ -44,12 +47,74 @@ body {
   transform: scale(1.02);
 }
 
+/* custom margin */
+.m-6 {
+  margin: 4rem !important;
+}
+.mt-6 {
+  margin-top: 4rem !important;
+}
+.mb-6 {
+  margin-bottom: 4rem !important;
+}
+.ms-6 {
+  margin-left: 4rem !important;
+}
+.me-6 {
+  margin-right: 4rem !important;
+}
+.mx-6 {
+  margin-left: 4rem !important;
+  margin-right: 4rem !important;
+}
+.my-6 {
+  margin-top: 4rem !important;
+  margin-bottom: 4rem !important;
+}
+
+/* custom padding */
+.p-6 {
+  padding: 4rem !important;
+}
+.pt-6 {
+  padding-top: 4rem !important;
+}
+.pb-6 {
+  padding-bottom: 4rem !important;
+}
+.ps-6 {
+  padding-left: 4rem !important;
+}
+.pe-6 {
+  padding-right: 4rem !important;
+}
+.px-6 {
+  padding-left: 4rem !important;
+  padding-right: 4rem !important;
+}
+.py-6 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+
+/* custom ukuran font */
+.fs-7 {
+  font-size: 0.9rem;
+}
+.fs-8 {
+  font-size: 0.8rem;
+}
+.fs-9 {
+  font-size: 0.7rem;
+}
+
+/* grid */
 .grid-8 {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 1rem;
 }
-
 
 /* footer costum */
 .footer {
@@ -64,7 +129,7 @@ body {
 
 .footer-link:hover {
   color: #fff;
-  transform: translateX(4px); 
+  transform: translateX(4px);
 }
 
 .footer-icon {

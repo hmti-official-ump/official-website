@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-    <head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HMTI UMP</title>
@@ -32,8 +32,9 @@
   </head>
   <body class="position-relative">
     <header class="sticky-top z-3">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
-        <div class="container-fluid">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container">
           <a class="navbar-brand fw-bold" href="#"
             ><img
               class="csi-1 me-2"
@@ -57,8 +58,10 @@
             id="navbarNavAltMarkup"
           >
             <div class="mt-2 mt-md-0 navbar-nav gap-2">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Acara</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+              <a class="nav-link" href="acara.html">Acara</a>
               <a class="nav-link" href="#">Struktur</a>
               <a class="nav-link" href="#">Album</a>
               <a class="nav-link" href="#">Tentang</a>
@@ -68,50 +71,55 @@
       </nav>
     </header>
     <main>
-      <!--home  -->
       <!-- hero -->
-      <section class="container d-flex align-items-center py-4 my-4 min-vh-100">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h1 class="fw-bold">
-              Bersinergi, Berkreasi, Menguasi
-              <span class="text-warning">Teknologi</span>
-            </h1>
-            <p>
-              Himpunan Mahasiswa Teknologi Informasi Universitas Muhammadiyah
-              Palembang. Wadah pengembangan kreativitas dan inovasi mahasiswa
-              IT.
-            </p>
-            <div class="d-grid d-md-flex gap-2">
-              <button class="btn btn-primary">Kenalan</button>
-              <button class="btn btn-secondary">acara</button>
+      <section class="pb-6 mt-3 mb-4">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div
+                class="d-inline-block py-1 bg-primary text-light px-3 mb-3 rounded-4 border border-secondary"
+              >
+                <p class="fs-7 d-inline">Welcome to HMTI UMP</p>
+                <i class="bi d-inline fs-7 ms-1 bi-arrow-down-circle"></i>
+              </div>
+              <h1 class="fw-bold mb-3">
+                Bersinergi, Berkreasi, Menguasi
+                <span class="text-warning">Teknologi</span>
+              </h1>
+              <p class="mb-3">
+                Himpunan Mahasiswa Teknologi Informasi Universitas Muhammadiyah
+                Palembang. Wadah pengembangan kreativitas dan inovasi mahasiswa
+                IT
+              </p>
+              <div class="d-grid d-md-flex gap-2 mb-3">
+                <button class="btn btn-primary">Kenalan</button>
+                <button class="btn btn-secondary">acara</button>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6 p-lg-5 mt-3 mt-lg-0">
-            <div class="ratio ratio-1x1">
-              <img
-                src="assets/foto_1.jpeg"
-                class="object-fit-cover img-fluid rounded-4"
-                alt="foto bersama kadiv"
-              />
+            <div class="col-lg-6 p-lg-5 mt-3 mt-lg-0">
+              <div class="ratio ratio-1x1">
+                <img
+                  src="assets/foto_1.jpeg"
+                  class="object-fit-cover img-fluid rounded-4"
+                  alt="foto bersama kadiv"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- about -->
-      <section
-        class="container-fluid justify-content-center bg-light my-4 py-4 min-vh-100 d-flex align-items-center"
-      >
-        <div class="container d-flex flex-column gap-3">
-          <div class="text-center">
+      <section class="bg-light mb-4 py-6">
+        <div class="container">
+          <div class="text-center mb-4">
             <div
               class="d-inline-block py-1 px-3 mb-3 rounded-5 border border-secondary"
             >
-              <p class="fs-8 mb-0 d-inline">Tentang</p>
+              <p class="fs-8 d-inline">Tentang</p>
               <i class="bi d-inline fs-8 bi-arrow-right"></i>
             </div>
-            <h2 class="mb-3 fw-bold judul">Tentang kami</h2>
-            <p class="mb-3">
+            <h2 class="fw-bold judul">Tentang kami</h2>
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
               blanditiis tenetur sequi reiciendis sed ipsum inventore vitae non
               maiores, aut possimus dolores tempore debitis minima molestias
@@ -121,7 +129,7 @@
           </div>
           <!-- keunggulan -->
           <div class="row">
-            <div class="col-lg-3 col-6 m-lg-0 my-2">
+            <div class="col-lg-3 col-12 col-md-6 m-lg-0 my-2">
               <div class="rounded-4 border p-4 h-100">
                 <i class="bi bi-flag fs-3"></i>
                 <h5>Sejak 2019</h5>
@@ -130,27 +138,27 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-3 col-6 m-lg-0 my-2">
+            <div class="col-lg-3 col-12 col-md-6 m-lg-0 my-2">
               <div class="rounded-4 border p-4 h-100">
-                <i class="bi bi-flag fs-3"></i>
+                <i class="bi bi-people fs-3"></i>
                 <h5>50+ Anggota</h5>
                 <p class="fs-7">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </p>
               </div>
             </div>
-            <div class="col-lg-3 col-6 m-lg-0 my-2">
+            <div class="col-lg-3 col-12 col-md-6 m-lg-0 my-2">
               <div class="rounded-4 border p-4 h-100">
-                <i class="bi bi-flag fs-3"></i>
+                <i class="bi bi-award fs-3"></i>
                 <h5>7 Divisi</h5>
                 <p class="fs-7">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </p>
               </div>
             </div>
-            <div class="col-lg-3 col-6 m-lg-0 my-2">
+            <div class="col-lg-3 col-12 col-md-6 m-lg-0 my-2">
               <div class="rounded-4 border p-4 h-100">
-                <i class="bi bi-flag fs-3"></i>
+                <i class="bi bi-list-task fs-3"></i>
                 <h5>10+ Program</h5>
                 <p class="fs-7">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -161,121 +169,319 @@
         </div>
       </section>
       <!-- divisi -->
-      <section class="container my-4 py-4 d-flex flex-column gap-3">
-        <div class="text-center">
-          <div
-            class="d-inline-block py-1 px-3 mb-3 rounded-5 border border-secondary"
-          >
-            <p class="fs-8 mb-0 d-inline">Struktur</p>
-            <i class="bi d-inline fs-8 bi-arrow-right"></i>
+      <section class="mb-4 py-6">
+        <div class="container">
+          <div class="text-center">
+            <div
+              class="d-inline-block py-1 px-3 mb-3 rounded-5 border border-secondary"
+            >
+              <p class="fs-8 mb-0 d-inline">Struktur</p>
+              <i class="bi d-inline fs-8 bi-arrow-right"></i>
+            </div>
+            <h2 class="mb-3 fw-bold judul">Divisi HMTI</h2>
           </div>
-          <h2 class="mb-3 fw-bold judul">Divisi HMTI</h2>
+          <!-- penjelasan devisi singkat -->
+          <div class="row">
+            <div class="col-lg-3 col-6 m-lg-0 mb-2">
+              <div class="p-4 h-100">
+                <div
+                  class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
+                >
+                  <img class="csi-1" src="assets/star_icon.svg" alt="gagal" />
+                </div>
+                <h5>Pengurus Inti</h5>
+                <p class="fs-7">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 m-lg-0 my-2">
+              <div class="p-4 h-100">
+                <div
+                  class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
+                >
+                  <img class="csi-1" src="assets/kode-icon.svg" alt="gagal" />
+                </div>
+                <h5>Divisi IT</h5>
+                <p class="fs-7">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 m-lg-0 my-2">
+              <div class="p-4 h-100">
+                <div
+                  class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
+                >
+                  <img class="csi-1" src="assets/sport_icon.svg" alt="gagal" />
+                </div>
+                <h5>Minat Bakat</h5>
+                <p class="fs-7">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 m-lg-0 my-2">
+              <div class="p-4 h-100">
+                <div
+                  class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
+                >
+                  <img
+                    class="csi-1"
+                    src="assets/peoples_icon.svg"
+                    alt="gagal"
+                  />
+                </div>
+                <h5>Humas</h5>
+                <p class="fs-7">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 m-lg-0 my-2">
+              <div class="p-4 h-100">
+                <div
+                  class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
+                >
+                  <img class="csi-1" src="assets/idea_icon.svg" alt="gagal" />
+                </div>
+                <h5>Wirausaha</h5>
+                <p class="fs-7">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 m-lg-0 my-2">
+              <div class="p-4 h-100">
+                <div
+                  class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
+                >
+                  <img class="csi-1" src="assets/islam_icon.svg" alt="gagal" />
+                </div>
+                <h5>Agama</h5>
+                <p class="fs-7">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 m-lg-0 my-2">
+              <div class="p-4 h-100">
+                <div
+                  class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
+                >
+                  <img class="csi-1" src="assets/shield_icon.svg" alt="gagal" />
+                </div>
+                <h5>Kaderisasi</h5>
+                <p class="fs-7">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 m-lg-0 my-2">
+              <div class="p-4 h-100">
+                <div
+                  class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
+                >
+                  <img class="csi-1" src="assets/medal_icon.svg" alt="gagal" />
+                </div>
+                <h5>KSKP</h5>
+                <p class="fs-7">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- penjelasan devisi singkat -->
-        <div class="row">
-          <div class="col-lg-3 col-6 m-lg-0 my-2">
-            <div class="p-4 h-100">
-              <div
-                class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
-              >
-                <img class="csi-1" src="assets/star_icon.svg" alt="gagal" />
+      </section>
+      <!-- acara -->
+      <section class="mb-4 py-6 bg-light">
+        <div class="container">
+          <div class="text-center">
+            <div
+              class="d-inline-block py-1 px-3 mb-3 rounded-5 border border-secondary"
+            >
+              <p class="fs-8 mb-0 d-inline">Acara</p>
+              <i class="bi d-inline fs-8 bi-arrow-right"></i>
+            </div>
+            <h2 class="mb-3 fw-bold judul">Acara HMTI</h2>
+          </div>
+          <div class="border px-3 py-2 rounded-4">
+            <div class="py-3 d-flex gap-3 overflow-x-auto">
+              <!-- acara 1 -->
+              <div class="card card-acara">
+                <div
+                  title="Status Aktif"
+                  class="bg-success d-inline-block position-absolute m-2 px-2 rounded-5 border border-secondary"
+                >
+                  <p class="text-light fs-9 d-inline">
+                    <span class="text-warning fw-bold">• </span>online
+                  </p>
+                </div>
+                <div class="card-acara-atas">
+                  <img
+                    src="assets/foto_1.jpeg"
+                    class="card-img-top h-100 object-fit-cover"
+                    style="object-position: 100% 60%"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <h5 class="card-title">Mobile Legends Tournamen</h5>
+                  <p class="card-text mb-1 fs-7">
+                    <i class="bi bi-calendar me-1"></i>
+                    14-15 Febuari 2025
+                  </p>
+                  <p class="mb-1 card-text fs-7">
+                    <i class="bi bi-clock me-1"></i>
+                    8.00 WIB - Selesai
+                  </p>
+                  <p class="card-text fs-7">
+                    <i class="bi bi-geo-alt me-1"></i>
+                    Universitas Muhammadiyah Palembang
+                  </p>
+                  <p class="card-text fs-7">
+                    HMTI Sedang mengadakan lomba mobile legend ...
+                  </p>
+                  <a href="#" class="btn btn-primary fs-8"
+                    >Selengkapnya<i class="bi ms-1 bi-arrow-right"></i
+                  ></a>
+                </div>
               </div>
-              <h5>Pengurus Inti</h5>
-              <p class="fs-7">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
+              <!-- acara 1 -->
+              <div class="card card-acara">
+                <div
+                  title="Status Aktif"
+                  class="bg-success d-inline-block position-absolute m-2 px-2 rounded-5 border border-secondary"
+                >
+                  <p class="text-light fs-9 d-inline">
+                    <span class="text-warning fw-bold">• </span>online
+                  </p>
+                </div>
+                <div class="card-acara-atas">
+                  <img
+                    src="assets/foto_1.jpeg"
+                    class="card-img-top h-100 object-fit-cover"
+                    style="object-position: 100% 60%"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <h5 class="card-title">Mobile Legends Tournamen</h5>
+                  <p class="card-text mb-1 fs-7">
+                    <i class="bi bi-calendar me-1"></i>
+                    14-15 Febuari 2025
+                  </p>
+                  <p class="mb-1 card-text fs-7">
+                    <i class="bi bi-clock me-1"></i>
+                    8.00 WIB - Selesai
+                  </p>
+                  <p class="card-text fs-7">
+                    <i class="bi bi-geo-alt me-1"></i>
+                    Universitas Muhammadiyah Palembang
+                  </p>
+                  <p class="card-text fs-7">
+                    HMTI Sedang mengadakan lomba mobile legend ...
+                  </p>
+                  <a href="#" class="btn btn-primary fs-8"
+                    >Selengkapnya<i class="bi ms-1 bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- acara 1 -->
+              <div class="card card-acara">
+                <div
+                  title="Status Aktif"
+                  class="bg-success d-inline-block position-absolute m-2 px-2 rounded-5 border border-secondary"
+                >
+                  <p class="text-light fs-9 d-inline">
+                    <span class="text-warning fw-bold">• </span>online
+                  </p>
+                </div>
+                <div class="card-acara-atas">
+                  <img
+                    src="assets/foto_1.jpeg"
+                    class="card-img-top h-100 object-fit-cover"
+                    style="object-position: 100% 60%"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <h5 class="card-title">Mobile Legends Tournamen</h5>
+                  <p class="card-text mb-1 fs-7">
+                    <i class="bi bi-calendar me-1"></i>
+                    14-15 Febuari 2025
+                  </p>
+                  <p class="mb-1 card-text fs-7">
+                    <i class="bi bi-clock me-1"></i>
+                    8.00 WIB - Selesai
+                  </p>
+                  <p class="card-text fs-7">
+                    <i class="bi bi-geo-alt me-1"></i>
+                    Universitas Muhammadiyah Palembang
+                  </p>
+                  <p class="card-text fs-7">
+                    HMTI Sedang mengadakan lomba mobile legend ...
+                  </p>
+                  <a href="#" class="btn btn-primary fs-8"
+                    >Selengkapnya<i class="bi ms-1 bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- acara 1 -->
+              <div class="card card-acara">
+                <div
+                  title="Status Aktif"
+                  class="bg-success d-inline-block position-absolute m-2 px-2 rounded-5 border border-secondary"
+                >
+                  <p class="text-light fs-9 d-inline">
+                    <span class="text-warning fw-bold">• </span>online
+                  </p>
+                </div>
+                <div class="card-acara-atas">
+                  <img
+                    src="assets/foto_1.jpeg"
+                    class="card-img-top h-100 object-fit-cover"
+                    style="object-position: 100% 60%"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <h5 class="card-title">Mobile Legends Tournamen</h5>
+                  <p class="card-text mb-1 fs-7">
+                    <i class="bi bi-calendar me-1"></i>
+                    14-15 Febuari 2025
+                  </p>
+                  <p class="mb-1 card-text fs-7">
+                    <i class="bi bi-clock me-1"></i>
+                    8.00 WIB - Selesai
+                  </p>
+                  <p class="card-text fs-7">
+                    <i class="bi bi-geo-alt me-1"></i>
+                    Universitas Muhammadiyah Palembang
+                  </p>
+                  <p class="card-text fs-7">
+                    HMTI Sedang mengadakan lomba mobile legend ...
+                  </p>
+                  <a href="#" class="btn btn-primary fs-8"
+                    >Selengkapnya<i class="bi ms-1 bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-3 col-6 m-lg-0 my-2">
-            <div class="p-4 h-100">
-              <div
-                class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
-              >
-                <img class="csi-1" src="assets/kode-icon.svg" alt="gagal" />
-              </div>
-              <h5>Divisi IT</h5>
-              <p class="fs-7">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
+        </div>
+      </section>
+      <!-- album terkini -->
+      <section class="mb-4 py-6">
+        <div class="container">
+          <div class="text-center">
+            <div
+              class="d-inline-block py-1 px-3 mb-3 rounded-5 border border-secondary"
+            >
+              <p class="fs-8 mb-0 d-inline">Album</p>
+              <i class="bi d-inline fs-8 bi-arrow-right"></i>
             </div>
-          </div>
-          <div class="col-lg-3 col-6 m-lg-0 my-2">
-            <div class="p-4 h-100">
-              <div
-                class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
-              >
-                <img class="csi-1" src="assets/sport_icon.svg" alt="gagal" />
-              </div>
-              <h5>Minat Bakat</h5>
-              <p class="fs-7">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 m-lg-0 my-2">
-            <div class="p-4 h-100">
-              <div
-                class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
-              >
-                <img class="csi-1" src="assets/kode-icon.svg" alt="gagal" />
-              </div>
-              <h5>Humas</h5>
-              <p class="fs-7">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 m-lg-0 my-2">
-            <div class="p-4 h-100">
-              <div
-                class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
-              >
-                <img class="csi-1" src="assets/kode-icon.svg" alt="gagal" />
-              </div>
-              <h5>Wirausaha</h5>
-              <p class="fs-7">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 m-lg-0 my-2">
-            <div class="p-4 h-100">
-              <div
-                class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
-              >
-                <img class="csi-1" src="assets/kode-icon.svg" alt="gagal" />
-              </div>
-              <h5>KSKP</h5>
-              <p class="fs-7">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 m-lg-0 my-2">
-            <div class="p-4 h-100">
-              <div
-                class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
-              >
-                <img class="csi-1" src="assets/kode-icon.svg" alt="gagal" />
-              </div>
-              <h5>Agama</h5>
-              <p class="fs-7">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 m-lg-0 my-2">
-            <div class="p-4 h-100">
-              <div
-                class="p-2 mb-2 bg-warning rounded-circle border d-inline-block"
-              >
-                <img class="csi-1" src="assets/kode-icon.svg" alt="gagal" />
-              </div>
-              <h5>Divisi IT</h5>
-              <p class="fs-7">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
+            <h2 class="mb-3 fw-bold judul">Album Terkini</h2>
           </div>
           <!-- Foto divisi -->
           <div id="carouselExampleCaptions" class="carousel slide">
@@ -301,7 +507,7 @@
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner rounded-4 overflow-hidden">
               <!-- gambar 1 -->
               <div class="carousel-item active">
                 <div class="ratio ratio-16x9">
@@ -373,9 +579,9 @@
           </div>
         </div>
       </section>
-      <!-- acara -->
     </main>
 
+    <!-- footer -->
     <footer class="footer mt-5 pt-5 pb-3 bg-dark text-light">
       <div class="container">
         <div class="row g-4">
@@ -431,7 +637,7 @@
               </li>
               <li>
                 <i class="bi bi-telephone me-2"></i>
-                0999999
+                085159920061
               </li>
               <li>
                 <i class="bi bi-envelope me-2"></i>
@@ -442,7 +648,7 @@
         </div>
         <hr class="border-secondary my-4" />
         <div class="text-center text-secondary fs-7">
-          © 2026 HMTI UMP • All rights reserved
+          © 2026 HMTI UMP - By Divisi IT
         </div>
       </div>
     </footer>
