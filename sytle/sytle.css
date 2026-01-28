@@ -1,0 +1,83 @@
+:root {
+}
+
+* {
+  font-family: "poppins";
+}
+
+body {
+
+}
+.csi-1 {
+  height: 2rem;
+  width: 2rem;
+}
+.csi-2 {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.csi-3 {
+  height: 3rem;
+  width: 3rem;
+}
+
+.judul::after{
+  margin-top: 0.3rem;
+  content: '';
+  display: block;
+  border-bottom: 10px solid #000;
+  transform: scale(0.1);
+}
+
+.fs-7 {
+  font-size: 0.9rem;
+}
+.fs-8 {
+  font-size: 0.8rem;
+}
+
+.info-divisi {
+  color: black;
+  transition: 0.2s ease-out;
+}
+.info-divisi:hover {
+  transform: scale(1.02);
+}
+
+.grid-8 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1rem;
+}
+
+
+/* footer costum */
+.footer {
+  background: linear-gradient(180deg, #111, #000);
+}
+
+.footer-link {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer-link:hover {
+  color: #fff;
+  transform: translateX(4px); 
+}
+
+.footer-icon {
+  transition: 0.2s;
+}
+
+.footer-icon:hover {
+  color: #ffc107;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 80%;
+  }
+}
