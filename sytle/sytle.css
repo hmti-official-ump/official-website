@@ -19,6 +19,12 @@
   font-family: "poppins";
 }
 
+/* hero */
+.judul-hero {
+  font-size: 3.1rem;
+  animation: masuk duration timing-function delay iteration-count direction fill-mode;
+}
+
 .hero-section {
   position: relative;
   background-image: url("../assets/bg_1.svg");
@@ -35,6 +41,21 @@
 }
 
 /* loading */
+.hide-anim {
+  animation: anihide 0.35s ease-out forwards;
+}
+@keyframes anihide {
+  0% {
+    opacity: 100%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    display: none;
+  }
+}
 .loading-bar {
   width: 120px;
   height: 4px;
@@ -61,7 +82,6 @@
 }
 
 #loading-screen {
-  transition: 0.5s ease-out;
   position: fixed;
   inset: 0;
   background: #fff;
@@ -70,11 +90,6 @@
   align-items: center;
   justify-content: center;
   z-index: 9999;
-}
-
-/* hero */
-.judul-hero {
-  font-size: 3.1rem;
 }
 
 /* ukuran icon */
@@ -103,19 +118,34 @@
 .judul {
   font-size: 2.4rem;
 }
+
+.bg-website{
+  background: #dbe6eb;
+}
+
+
+
 .judul::after,
 .judul-core::after {
   margin-top: 0.3rem;
   content: "";
   display: block;
-  border-bottom: 18px solid #000;
-  transform: scale(0.15);
+  border-bottom: 30px solid #000;
+  transform: scale(0.10);
 }
+
+/* struktur */
+.card-struktur-atas {
+  aspect-ratio: 3/4;
+}
+
+
 
 /* acara */
 .card-acara-atas {
   height: 10rem;
 }
+
 .card-acara {
   min-width: 23rem;
   max-width: 23rem;
@@ -237,14 +267,91 @@
 /* tablet */
 @media (max-width: 992px) {
   :root {
-    font-size: 90%;
+    font-size: 87%;
   }
 }
+
+/* ============ album ========== */
+/* Design Stack Album */
+.album-stack {
+  position: relative;
+  height: 320px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.stack-card {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  border-radius: 20px;
+  background: #8db7e0;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-3 { transform: rotate(-6deg); opacity: 0.3; }
+.card-2 { transform: rotate(-3deg); opacity: 0.6; }
+
+.stack-main {
+  position: relative;
+  width: 100%; height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 5;
+  transition: transform 0.3s ease;
+}
+
+.stack-main img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.stack-info {
+  position: absolute;
+  bottom: 0; left: 0; width: 100%;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  z-index: 6;
+}
+
+/* Hover Effect Stack */
+.album-stack:hover .card-3 { transform: rotate(-12deg) translate(-10px, -5px); }
+.album-stack:hover .card-2 { transform: rotate(-6deg) translate(-5px, -2px); }
+.album-stack:hover .stack-main { transform: translateY(-10px); }
+.album-stack:hover img { transform: scale(1.1); }
+
+/* Modal & Carousel Styling */
+.carousel-img-container img {
+  max-height: 70vh;
+  max-width: 90%;
+  border: 10px solid white; /* Kesan foto polaroid besar */
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.carousel-nav:hover { background: var(--bs-primary); color: white; }
+.carousel-nav.prev { left: 50px; }
+.carousel-nav.next { right: 50px; }
+
+.modal-open { overflow: hidden; }
+/* ============ album end ========== */
+
+
 
 /* hp */
 @media (max-width: 768px) {
   :root {
-    font-size: 85%;
+    font-size: 80%;
   }
   .hero-deco {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1080' height='1920' preserveAspectRatio='none' viewBox='0 0 1080 1920'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1052%26quot%3b)' fill='none'%3e%3cpath d='M196.25171938764612 123.42834435436656L274.9754834000379 284.83598013255556 436.38311917822693 206.1122161201638 357.6593551658351 44.70458034197476z' fill='rgba(10%2c 42%2c 102%2c 0.14)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M592.515405633046 467.5918955958647L768.1894562390756 498.5679705280519 799.1655311712628 322.8939199220223 623.4914805652332 291.9178449898351z' fill='rgba(10%2c 42%2c 102%2c 0.14)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M525.5723781166022 413.7020255998129L774.0399171354973 287.1014910964358 647.4393826321202 38.63395207754064 398.971843613225 165.23448658091775z' fill='rgba(10%2c 42%2c 102%2c 0.14)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M450.63298136682 1841.3380241266514L676.9941908737613 1893.5976271065135 729.2537938536234 1667.2364175995722 502.89258434668216 1614.97681461971z' fill='rgba(10%2c 42%2c 102%2c 0.14)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1140.5842995430273 1109.0163835101796L883.9872057198519 1100.0558155445283 875.0266377542005 1356.6529093677036 1131.623731577376 1365.6134773333551z' fill='rgba(10%2c 42%2c 102%2c 0.14)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1052'%3e%3crect width='1080' height='1920' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");

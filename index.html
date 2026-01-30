@@ -29,6 +29,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="position-relative">
     <!-- loading -->
@@ -40,7 +43,6 @@
       <h5 class="mt-3">Memuat Halaman</h5>
       <p class="text-secondary">Halaman sedang diproses mohon untuk bersabar</p>
     </div>
-
     <header class="sticky-top z-3">
       <!-- navbar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 border-bottom">
@@ -63,9 +65,6 @@
             <div class="mt-2 mt-md-0 navbar-nav gap-2">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               <a class="nav-link" href="acara.html">Acara</a>
-
-              <!--  -->
-
               <div class="nav-item">
                 <div class="d-flex align-items-center dropdown">
                   <!-- Link utama -->
@@ -104,10 +103,7 @@
                   </ul>
                 </div>
               </div>
-
-              <!--  -->
-
-              <a class="nav-link" href="#">Album</a>
+              <a class="nav-link" href="album.html">Album</a>
               <a class="nav-link" href="#">Tentang</a>
             </div>
           </div>
@@ -116,25 +112,48 @@
     </header>
     <main>
       <!-- hero -->
-
       <section class="hero-section">
-        <div class="hero-deco h-100 w-100 py-6">
+        <div class="hero-deco h-100 w-100 pb-6 pt-5 pt-lg-5">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-lg-6">
-                <div class="d-inline-block py-1 bg-primary text-light px-3 mb-md-3 mb-4 rounded-4 shadow">
+                <div
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-delay="500"
+                  data-aos-duration="1200"
+                  data-aos="fade"
+                  class="d-inline-block py-1 bg-primary text-light px-3 mb-md-3 mb-4 rounded-4 shadow"
+                >
                   <p class="fs-7 d-inline">Welcome to HMTI UMP</p>
                   <i class="bi d-inline fs-8 ms-1 bi-heart"></i>
                 </div>
-                <h1 class="fw-bold mb-md-3 mb-4 judul-hero text-shadow-lg">
+                <h1
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-delay="650"
+                  data-aos-duration="1200"
+                  data-aos="fade"
+                  class="fw-bold mb-md-3 mb-4 judul-hero text-shadow-lg"
+                >
                   Bersama Mewujudkan Inovasi
                   <span class="text-primary">Teknologi</span>
                 </h1>
-                <p class="mb-md-3 mb-4 text-shadow-sm">
+                <p
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-delay="800"
+                  data-aos-duration="1200"
+                  data-aos="fade"
+                  class="mb-md-3 mb-4 text-shadow-sm"
+                >
                   Himpunan Mahasiswa Teknologi Informasi Universitas Muhammadiyah Palembang. Wadah
                   pengembangan kreativitas dan inovasi mahasiswa IT
                 </p>
-                <div class="mb-md-3 mb-4">
+                <div
+                  class="mb-md-3 mb-4"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-delay="950"
+                  data-aos-duration="1200"
+                  data-aos="fade"
+                >
                   <a href="#about_singkat" class="shadow-sm btn btn-primary me-2"
                     >Kenalan<i class="bi fs-7 bi-arrow-right ms-2"></i
                   ></a>
@@ -144,17 +163,24 @@
                 </div>
               </div>
               <div class="col-lg-6 p-md-5 p-3 mt-3 mt-lg-0">
-                <div class="ratio ratio-1x1 shadow-lg rounded-4 overflow-hidden">
+                <div
+                  data-aos-delay="500"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="1200"
+                  data-aos="zoom-in"
+                  class="ratio ratio-1x1 shadow-lg rounded-4 overflow-hidden"
+                >
                   <img src="assets/foto_1.jpeg" class="object-fit-cover img-fluid" alt="foto bersama kadiv" />
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div style="height: 10px; backdrop-filter: blur(2px); transform: translateY(50%)" class="w-100"></div>
       </section>
       <!-- about -->
       <section id="about_singkat" class="bg-light border-bottom border-top mb-4 py-6">
-        <div class="container">
+        <div class="container" data-aos-duration="1200" data-aos="zoom-in">
           <div class="text-center mb-4">
             <div class="d-inline-block py-1 px-3 mb-3 rounded-5 border border-secondary">
               <p class="fs-8 d-inline">Tentang</p>
@@ -331,8 +357,8 @@
                   </p>
                   <p class="card-text fs-7">HMTI Sedang mengadakan lomba mobile legend ...</p>
                   <div>
-                    <a href="https://wa.me/089617315091" class="btn btn-primary fs-8">
-                    Selengkapnya<i class="bi ms-1 bi-arrow-right"></i
+                    <a href="https://wa.me/6289617315091" class="btn btn-primary fs-8">
+                      Selengkapnya<i class="bi ms-1 bi-arrow-right"></i
                     ></a>
                   </div>
                 </div>
@@ -580,7 +606,11 @@
       </div>
     </footer>
 
+    <!-- js -->
     <script src="js/js.js"></script>
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
 
     <!-- bootstrap -->
     <script
@@ -588,6 +618,8 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   </body>
 </html>
-
