@@ -153,8 +153,14 @@
   font-size: 14px;
 }
 
-.headline {
+.inner-hero{
+  background-image: url(../assets/foto_3.jpg);
+  background-position: center ;
+}
+
+.hero-cover {
   padding-block: 8rem;
+  background-color: rgba(24, 63, 121, 0.8) !important;
 }
 
 .bingkai-khusus-1 {
@@ -232,15 +238,15 @@
 }
 
 /* acara */
-.card-acara-atas {
-  height: 10rem;
-}
 
 .main-event {
   background: white;
   border-radius: 18px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
   border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.main-thumbnail{
+  object-position:center;
 }
 
 .card-acara {
