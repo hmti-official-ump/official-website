@@ -153,11 +153,6 @@
   font-size: 14px;
 }
 
-.inner-hero{
-  background-image: url(../assets/foto_3.jpg);
-  background-position: center ;
-}
-
 .hero-cover {
   padding-block: 8rem;
   background-color: rgba(24, 63, 121, 0.8) !important;
@@ -236,6 +231,59 @@
   background: rgba(255, 255, 255, 0.15);
   font-size: 28px;
 }
+.divisi-nav {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  border-color: #dddd;
+}
+.divisi-nav-wraper {
+  position: relative;
+}
+.divisi-nav-wraper::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+}
+.divisi-nav::-webkit-scrollbar {
+  display: none;
+}
+.divisi-nav .nav-item {
+  min-width: 200px;
+}
+.divisi-nav .nav-item a {
+  color: #000;
+}
+.divisi-nav .nav-item .active {
+  background-color: #183f79;
+  color: white;
+}
+
+.judul-divisi::after {
+  margin-top: 1rem;
+  content: "";
+  display: block;
+  border-bottom: 30px solid #d9d9d9;
+  transform: scale(0.2);
+  border-radius: 1em;
+}
+
+.bidang{
+  display: none;
+} 
+.bidang:target{
+  display: block;
+}
+/* default */
+body:not(:has(.bidang:target)) #bph {
+  display: block;
+}
 
 /* acara */
 
@@ -245,8 +293,8 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
-.main-thumbnail{
-  object-position:center;
+.main-thumbnail {
+  object-position: center;
 }
 
 .card-acara {
@@ -317,9 +365,9 @@
 }
 
 /* FAQ */
-.faq-section{
-  background-color: #EEF4FF;
-  border-block: 1px solid rgba(221, 221, 221, 0.7) ;
+.faq-section {
+  background-color: #eef4ff;
+  border-block: 1px solid rgba(221, 221, 221, 0.7);
 }
 .accordion {
   border: 1px solid rgba(221, 221, 221, 1);
@@ -577,5 +625,9 @@
   .container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+  /* struktur */
+  .divisi-nav .nav-item {
+    min-width: 120px;
   }
 }

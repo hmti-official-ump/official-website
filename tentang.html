@@ -56,44 +56,7 @@
             <div class="mt-2 mt-md-0 navbar-nav gap-2">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               <a class="nav-link" href="acara.html">Acara</a>
-              <div class="nav-item">
-                <div class="d-flex align-items-center dropdown">
-                  <!-- Link utama -->
-                  <a href="struktur.html" class="nav-link pe-2"> Struktur </a>
-
-                  <!-- Panah dropdown -->
-                  <a
-                    class="nav-link dropdown-toggle p-0 fs-5 pe-2 d-inline-block"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                  ></a>
-
-                  <ul class="fs-7 dropdown-menu position-absolute">
-                    <li>
-                      <a class="dropdown-item" href="pengurus-inti.html">Pengurus Inti</a>
-                    </li>
-                    <li><a class="dropdown-item" href="it.html">Divisi IT</a></li>
-                    <li>
-                      <a class="dropdown-item" href="minat-bakat.html">Divisi Minat Bakat</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="humas.html">Divisi Humas</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="wirausaha.html">Divisi Wirausaha</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="agama.html">Divisi Agama</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="kaderisasi.html">Divisi Kaderisasi</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="kskp.html">Divisi KSKP</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <a href="struktur.html" class="nav-link pe-2"> Struktur </a>
               <a class="nav-link" href="album.html">Album</a>
               <a class="nav-link" href="tentang.html">Tentang</a>
             </div>
@@ -103,22 +66,31 @@
     </header>
     <main>
       <!-- hero -->
-      <section class="headline">
-        <div class="container">
-          <!-- head -->
-          <div class="text-center">
-            <div class="d-inline-block py-1 px-3 mb-2 rounded-5 border border-secondary">
-              <p class="fs-8 mb-0 d-inline">Tentang</p>
+      <section
+        class="mb-6"
+        style="
+          background-image: url(https://scontent.fplm4-1.fna.fbcdn.net/v/t39.30808-6/562249273_1362001552243203_832352289141541146_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=vovHuJNpBiIQ7kNvwEjQIvG&_nc_oc=AdpRhsVcj6r7XJTP9k37WPpe_wwxUBZCLcNEwx2ozdyeAwRLjctfDNgO1gi29HgA3f5Kp8RTZJiox3VmLkjvMF6H&_nc_zt=23&_nc_ht=scontent.fplm4-1.fna&_nc_gid=PXpcHSBYiGiw3oBiHc0d_Q&_nc_ss=7a3a8&oh=00_AfwI_j_Abes9C04tiB5F_iovTukW1oI0gWizICmKrCfVjg&oe=69D1FDD6);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="hero-cover">
+          <div class="container">
+            <div class="text-center text-light d-flex flex-column gap-3">
+              <h1 class="mb-3 fw-bold display-5">Tentang Kami</h1>
+              <p class="fs-7 mb-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta provident id inventore quae
+                adipisci nobis quidem, neque.
+              </p>
+              <!-- arrow -->
+              <a id="cta"
+                ><span
+                  class="iconify-inline csi-2 text-light"
+                  data-icon="mingcute:arrow-down-circle-fill"
+                ></span
+              ></a>
             </div>
-            <h2 class="mb-3 fw-bold judul-core text-shadow">Tentang Kami</h2>
-            <p class="text-secondary fs-7 mb-3">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta provident id inventore quae
-              adipisci nobis quidem, neque.
-            </p>
-            <!-- cta -->
-            <a href="#about" class="btn"
-              ><span class="iconify-inline csi-1" data-icon="mingcute:arrow-down-circle-fill"></span
-            ></a>
           </div>
         </div>
       </section>
@@ -138,9 +110,7 @@
               </p>
             </div>
             <div class="col-lg-6 p-md-5 p-3 mt-3 mt-lg-0">
-              <div
-                class="ratio ratio-1x1 shadow-lg rounded-4 overflow-hidden"
-              >
+              <div class="ratio ratio-1x1 shadow-lg rounded-4 overflow-hidden">
                 <img src="assets/foto_1.jpeg" class="object-fit-cover img-fluid" alt="foto bersama kadiv" />
               </div>
             </div>
