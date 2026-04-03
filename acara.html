@@ -29,6 +29,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="position-relative">
     <header class="sticky-top z-3">
@@ -65,12 +68,18 @@
       <!-- hero -->
       <section class="mb-6" style="background-image: url(assets/foto_3.jpg); background-position: center">
         <div class="hero-cover">
-          <div class="container">
+          <div
+            class="container"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="50"
+            data-aos-duration="1200"
+            data-aos="fade"
+          >
             <div class="text-center text-light d-flex flex-column gap-3">
               <h1 class="mb-3 fw-bold display-5">Acara HMTI</h1>
               <p class="fs-7 mb-3">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta provident id inventore quae
-                adipisci nobis quidem, neque.
+                Kumpulan kegiatan kami yang terbagi ke dalam agenda utama, yang akan datang, dan yang sudah
+                selesai.
               </p>
               <!-- arrow -->
               <a id="cta"
@@ -84,16 +93,33 @@
         </div>
       </section>
 
+      <!-- headline -->
+      <section class="pt-6">
+        <div class="container text-center">
+          <div class="mb-5">
+            <p class="fw-semibold text-primary mb-4">Acara HMTI</p>
+            <h2 style="max-width: 600px" class="mb-4 d-inline-block mb-0 fw-bold display-6 text-shadow">
+              Mari Ikuti Berbagai Acara yang Kami Selenggarakan
+            </h2>
+            <p class="small text-muted m-0">
+              Rangkuman kegiatan kami yang dapat diikuti maupun telah terlaksana
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="container my-5 py-3">
+        <hr class="border-secondary opacity-25" />
+      </div>
+
       <!-- unggulan -->
-      <section class="pt-3 pt-md-5">
+      <section>
         <div class="container">
           <div class="d-inline-block px-3 py-1 mb-3 rounded-5 border border-secondary fs-8">
             <p class="m-0"><i class="bi bi-star me-2"></i>Unggulan</p>
           </div>
-          <h2 class="mb-3 fw-semibold">Acara Unggulan</h2>
-          <p class="mb-4 text-secondary fs-7">
-            Program unggulan untuk mendukung mahasiswa Teknologi Informasi
-          </p>
+          <h2 class="mb-3 fw-semibold">Program Unggulan</h2>
+          <p class="mb-4 text-secondary fs-7">Acara utama untuk mendukung mahasiswa Teknologi Informasi</p>
           <!-- main event -->
           <div class="main-event mb-5 p-lg-4 p-3">
             <div class="row g-4 align-items-center">
@@ -130,10 +156,14 @@
                     HMTI mengadakan acara berbagi kepada anak-anak yang membutuhkan di panti asuhan sebagai
                     bentuk rasa syukur dan kepedulian terhadap sesama di bulan ramadhan
                   </p>
-                  <a href="#" class="btn btn-primary rounded-3 px-4"
+                  <a href="acara-detail.html" class="btn btn-primary rounded-3 px-4"
                     ><i class="bi bi-book me-2"></i>
                     Lihat Detail
                   </a>
+
+                  <a href="https://www.instagram.com/hmti_ump" class="shadow-sm btn border-secondary bg-light"
+                    ><i class="bi fs-7 bi-instagram me-2"></i>Instagram</a
+                  >
                 </div>
               </div>
             </div>
@@ -287,8 +317,9 @@
         </div>
       </section>
     </main>
+
     <!-- footer -->
-    <footer class="footer mt-5 pt-5 pb-3 bg-dark text-light bottom-0">
+    <footer class="footer mt-5 pt-5 pb-3 bg-dark text-light">
       <div class="container">
         <div class="row g-4">
           <!-- logo-->
@@ -304,13 +335,13 @@
 
             <!-- Sosial Media -->
             <div class="d-flex gap-3 fs-4">
-              <a href="https://instagram.com" class="text-light footer-icon">
+              <a href="https://instagram.com/hmti_ump" class="text-light footer-icon">
                 <i class="bi bi-instagram"></i>
               </a>
-              <a href="https://github.com" class="text-light footer-icon">
+              <a href="https://github.com/hmtiump" class="text-light footer-icon">
                 <i class="bi bi-github"></i>
               </a>
-              <a href="mailto:hmti@ump.ac.id" class="text-light footer-icon">
+              <a href="mailto:hmti.official20@gmail.com" class="text-light footer-icon">
                 <i class="bi bi-envelope"></i>
               </a>
             </div>
@@ -320,11 +351,11 @@
           <div class="col-lg-4">
             <h6 class="fw-bold mb-3">Navigasi</h6>
             <ul class="list-unstyled d-flex flex-column gap-2">
-              <li><a href="#" class="footer-link">Home</a></li>
-              <li><a href="#" class="footer-link">Acara</a></li>
-              <li><a href="#" class="footer-link">Struktur</a></li>
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="acara.html" class="footer-link">Acara</a></li>
+              <li><a href="struktur.html" class="footer-link">Struktur</a></li>
               <li><a href="album.html" class="footer-link">Album</a></li>
-              <li><a href="#" class="footer-link">Tentang</a></li>
+              <li><a href="tentang.html" class="footer-link">Tentang</a></li>
             </ul>
           </div>
 
@@ -342,7 +373,7 @@
               </li>
               <li>
                 <i class="bi bi-envelope me-2"></i>
-                hmti@ump.ac.id
+                hmti.official20@gmail.com
               </li>
             </ul>
           </div>
@@ -364,5 +395,12 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

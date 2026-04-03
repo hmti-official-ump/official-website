@@ -55,7 +55,7 @@
 
 /* loading */
 .hide-anim {
-  animation: anihide 0.35s ease-out forwards;
+  animation: anihide 0.28s ease-out forwards;
 }
 @keyframes anihide {
   0% {

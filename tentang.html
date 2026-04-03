@@ -76,12 +76,18 @@
         "
       >
         <div class="hero-cover">
-          <div class="container">
+          <div
+            class="container"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="50"
+            data-aos-duration="1200"
+            data-aos="fade"
+          >
             <div class="text-center text-light d-flex flex-column gap-3">
               <h1 class="mb-3 fw-bold display-5">Tentang Kami</h1>
               <p class="fs-7 mb-3">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta provident id inventore quae
-                adipisci nobis quidem, neque.
+                Profil singkat HMTI sebagai wadah mahasiswa Teknologi Informasi. Berfokus pada pengembangan
+                potensi, kolaborasi, dan kegiatan akademik.
               </p>
               <!-- arrow -->
               <a id="cta"
@@ -94,6 +100,20 @@
           </div>
         </div>
       </section>
+
+      <!-- headline -->
+      <section class="mb-4 py-6">
+        <div class="container text-center">
+          <div class="mb-5">
+            <p class="fw-semibold text-primary mb-4">Tentang HMTI</p>
+            <h2 style="max-width: 600px" class="mb-4 d-inline-block mb-0 fw-bold display-6 text-shadow">
+              Mari Mengenal Kami Lebih Banyak
+            </h2>
+            <p class="small text-muted m-0">Himpunan Mahasiswa Teknologi Informasi</p>
+          </div>
+        </div>
+      </section>
+
       <!-- about -->
       <section id="about" class="py-6 border-top border-bottom">
         <div class="container">
@@ -271,11 +291,11 @@
           <div class="col-lg-4">
             <h6 class="fw-bold mb-3">Navigasi</h6>
             <ul class="list-unstyled d-flex flex-column gap-2">
-              <li><a href="#" class="footer-link">Home</a></li>
-              <li><a href="#" class="footer-link">Acara</a></li>
-              <li><a href="#" class="footer-link">Struktur</a></li>
-              <li><a href="#" class="footer-link">Album</a></li>
-              <li><a href="#" class="footer-link">Tentang</a></li>
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="acara.html" class="footer-link">Acara</a></li>
+              <li><a href="struktur.html" class="footer-link">Struktur</a></li>
+              <li><a href="album.html" class="footer-link">Album</a></li>
+              <li><a href="tentang.html" class="footer-link">Tentang</a></li>
             </ul>
           </div>
 
@@ -293,7 +313,7 @@
               </li>
               <li>
                 <i class="bi bi-envelope me-2"></i>
-                hmti@ump.ac.id
+                hmti.official20@gmail.com
               </li>
             </ul>
           </div>
@@ -318,5 +338,9 @@
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
