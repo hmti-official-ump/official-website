@@ -180,15 +180,6 @@
   transform: scaleX(0.1);
 }
 
-.judul::after,
-.judul-core::after {
-  margin-top: 0.3rem;
-  content: "";
-  display: block;
-  border-bottom: 30px solid #000;
-  transform: scale(0.1);
-}
-
 /* struktur */
 .card-struktur-atas {
   aspect-ratio: 3/4;
